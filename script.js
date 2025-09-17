@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadButton.addEventListener('click', async (e) => {
         e.preventDefault();
-        // Показываем лоадер
         loader.style.display = 'block';
-        // Очищаем предыдущие изображения
         imagesContainer.innerHTML = '';
 
         try {
@@ -16,8 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 throw new Error('Ошибка при загрузке данных');
             }
             const data = await response.json();
-            // Проверяем, что data.message — это массив
-            if (Array.isArray(data.message)) {
+            if (Array.isArray(data.message)) { //Мы обращаемся к data.message, т.к. массив из API выглядит следующим образом: {"message":[...]}
                 data.message.forEach(url => {
                     const img = document.createElement('img');
                     img.src = url;
@@ -36,4 +33,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
