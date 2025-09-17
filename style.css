@@ -1,18 +1,15 @@
-/* Общие стили */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #f0f0f0;
 }
 
-/* Галерея */
 .gallery {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
 }
 
-/* Кнопка */
 #loadButton {
     padding: 10px 20px;
     font-size: 16px;
@@ -27,14 +24,12 @@ body {
     background-color: #45a049;
 }
 
-/* Лоадер */
 #loader {
     margin-top: 10px;
     font-size: 16px;
     color: #333;
 }
 
-/* Контейнер для изображений */
 #imagesContainer {
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +38,7 @@ body {
     justify-content: center;
 }
 
-/* Картинки */
 .gallery_image {
     width: 200px;
+
 }
