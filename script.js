@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         imagesContainer.innerHTML = '';
 
         try {
-            const response = await fetch('https://api.thecatapi.com/v1/images/search?limit=10');
+            const response = await fetch('https://dog.ceo/api/breeds/image/random/5');
             if (!response.ok) {
                 throw new Error('Ошибка при загрузке данных');
             }
@@ -36,3 +36,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
